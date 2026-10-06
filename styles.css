@@ -79,6 +79,62 @@ select:focus {
   padding: 24px 0 32px;
 }
 
+.notice {
+  border: 1px solid var(--blue);
+  background: rgba(54, 95, 125, 0.1);
+  color: var(--blue);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.notice.warn {
+  border-color: var(--red);
+  background: rgba(164, 64, 55, 0.1);
+  color: var(--red);
+}
+
+.notice.ok {
+  border-color: var(--green);
+  background: rgba(60, 112, 86, 0.1);
+  color: var(--green);
+}
+
+.resume-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  border: 1px solid var(--gold);
+  background: rgba(183, 134, 44, 0.12);
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+
+.resume-banner-text {
+  display: grid;
+  gap: 2px;
+}
+
+.resume-banner-text strong {
+  color: var(--gold);
+}
+
+.resume-banner-text span {
+  color: var(--ink);
+  font-size: 13px;
+}
+
+.resume-banner-actions {
+  display: flex;
+  gap: 8px;
+}
+
 .topbar {
   display: flex;
   align-items: center;
@@ -349,6 +405,37 @@ h3 {
 
 .cell.vertical {
   writing-mode: vertical-rl;
+}
+
+.cell.missing {
+  border-color: var(--red);
+  border-style: dashed;
+  background: rgba(164, 64, 55, 0.08);
+  color: var(--red);
+}
+
+.cell.excess {
+  box-shadow: inset 0 0 0 2px rgba(164, 64, 55, 0.4);
+}
+
+.cell-mark {
+  font-weight: 900;
+}
+
+.cell-tag {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 9px;
+  line-height: 1;
+  background: var(--red);
+  color: #fff;
+  border-radius: 4px;
+  padding: 2px 3px;
+}
+
+.cell {
+  position: relative;
 }
 
 .usage-list,

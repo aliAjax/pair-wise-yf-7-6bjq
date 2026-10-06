@@ -8,6 +8,17 @@
   </head>
   <body>
     <main class="shell">
+      <div id="notice" class="notice" hidden role="status"></div>
+      <section id="resumeBanner" class="resume-banner" hidden aria-label="自动续排存档">
+        <div class="resume-banner-text">
+          <strong>发现自动续排存档</strong>
+          <span id="resumeMessage"></span>
+        </div>
+        <div class="resume-banner-actions">
+          <button id="resumeAcceptBtn" class="primary" type="button">续排</button>
+          <button id="resumeDiscardBtn" type="button">放弃续排</button>
+        </div>
+      </section>
       <header class="topbar">
         <div>
           <p class="eyebrow">本地活字印章排版</p>
