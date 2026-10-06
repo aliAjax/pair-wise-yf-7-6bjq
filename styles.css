@@ -295,6 +295,62 @@ h3 {
   background: var(--red);
 }
 
+.badge.gold {
+  background: var(--gold);
+}
+
+.badge.muted {
+  background: var(--muted);
+}
+
+.autosave-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  background: rgba(183, 134, 44, 0.1);
+  box-shadow: var(--shadow);
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+
+.autosave-banner[hidden] {
+  display: none;
+}
+
+.autosave-info {
+  display: grid;
+  gap: 4px;
+}
+
+.autosave-info span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.autosave-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.storage-notice {
+  margin: 0 0 16px;
+  border: 1px solid var(--red);
+  border-radius: 8px;
+  background: rgba(164, 64, 55, 0.08);
+  color: var(--red);
+  padding: 10px 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.storage-notice[hidden] {
+  display: none;
+}
+
 .stage {
   margin: 0 auto;
   display: grid;
@@ -345,6 +401,17 @@ h3 {
   border-style: solid;
   background: rgba(47, 41, 33, 0.9);
   color: #fff5df;
+}
+
+.cell.missing {
+  border: 1px dashed var(--red);
+  background: rgba(164, 64, 55, 0.12);
+  color: var(--red);
+}
+
+.cell.over {
+  outline: 2px solid var(--gold);
+  outline-offset: -2px;
 }
 
 .cell.vertical {

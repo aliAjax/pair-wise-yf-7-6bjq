@@ -20,6 +20,19 @@
         </div>
       </header>
 
+      <section id="autosaveBanner" class="autosave-banner" hidden>
+        <div class="autosave-info">
+          <strong>发现未完成的续排存档</strong>
+          <span id="autosaveMeta"></span>
+        </div>
+        <span id="autosaveFresh" class="badge gold"></span>
+        <div class="autosave-actions">
+          <button id="restoreAutosaveBtn" class="primary" type="button">继续排版</button>
+          <button id="discardAutosaveBtn" type="button">放弃</button>
+        </div>
+      </section>
+      <p id="storageNotice" class="storage-notice" hidden></p>
+
       <section class="settings-bar" aria-label="版面设置">
         <label>
           纸张
